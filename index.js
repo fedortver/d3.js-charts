@@ -566,7 +566,7 @@ function pieChart(data,selector,settings) {
         },
     ] 
     */
-    var labelsDomain=dataPie.map(function(value){
+    var labelsDomain=data.map(function(value){
         return value.label;        
     });
   
