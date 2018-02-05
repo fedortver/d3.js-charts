@@ -1,0 +1,313 @@
+
+/* cashflow */
+#cashflow .g-column{
+
+}
+
+#cashflow .x.axis path{
+  display: none;
+}
+
+#cashflow .axis-my{
+   stroke: #8190c5;
+   stroke-width: 2;
+  
+}
+
+#cashflow .x.axis .tick line{
+   stroke:none;
+}
+
+#cashflow .rect{
+   stroke: #fff;  
+   width: 15px;
+   position: relative;
+}
+
+#cashflow .rent{
+   fill: #a8ceeb;  
+}
+
+#cashflow .rent:hover{
+  fill: #64a7dc;  
+}
+
+#cashflow .other{
+   fill: #f8cd95;  
+}
+
+#cashflow .other:hover{
+  fill: #f2a542;  
+}
+
+#cashflow .expenses{
+   fill: #f6b2b4;  
+}
+
+#cashflow .expenses:hover{
+  fill: #ef767a;  
+}
+
+#cashflow .x.axis text{
+  fill: #2c2d33;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+
+div.tooltip {   
+  position: absolute;           
+  text-align: center;                       
+  padding: 5px 10px;             
+  font: 13px Montserrat;        
+  color: #888c9b;
+  background:#fff;   
+  border: 0px;      
+  border-radius: 4px;           
+  pointer-events: none;    
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+}
+
+
+
+div.tooltip:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -4px;
+  width: 0; height: 0;
+  border-right: 4px solid #fff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
+}
+
+/*totals*/
+#totals{
+  margin: 50px 0 0 0;
+  
+}
+
+#totals rect{
+  height: 13px;
+  stroke: #fff;
+}
+
+#totals .rentTotal{
+  fill: #a8ceeb;  
+}
+
+#totals .rentTotal:hover{
+ fill: #64a7dc;  
+}
+
+#totals .otherTotal{
+  fill: #f8cd95;  
+}
+
+#totals .otherTotal:hover{
+ fill: #f2a542;  
+}
+
+#totals .expensesTotal{
+  fill: #f6b2b4;  
+}
+
+#totals .expensesTotal:hover{
+ fill: #ef767a;  
+}
+
+#totals .x.axisTotal, #totals .y.axisTotal{
+  display:none;
+}
+
+#totals .axis-myTotal{
+  stroke: #8190c5;
+  stroke-width: 4;
+}
+
+#totals .g-rowTotalFirst{
+  transform: translate(3px,20px)
+}
+
+#totals .g-rowTotalSecond{
+  transform: translate(3px,15px)
+}
+
+#totals .x.axis{
+  display: none;
+}
+
+#totals .g-rowTotal-text{
+  font-size: 13px;
+  font-family: Montserrat;
+  fill: #2c2d33;
+  transform: translate(3px,10px);
+
+}
+
+/*chart1*/
+
+#chart1{
+  margin: 50px 0 ;
+}
+
+#chart1 .line{
+  fill:none;
+  stroke: #f6d04c;
+  stroke-width: 2px;
+}
+
+#chart1 .x.axis{
+  transform:translate(20,0)
+}
+
+#chart1 .dot{
+  fill:#64a7dc;
+}
+
+#chart1 .dot:after{
+  
+  fill:#64a7dc;
+}
+
+#chart1 .dot-text{
+  fill:#64a7dc;
+  font-size: 13px;
+  font-family:Montserrat;
+  transform: translate(20px,-33px)
+}
+
+#chart1 .x.axis .tick text{
+  fill: #2c2d33;
+  font-size: 13px;
+  font-family: Montserrat;
+  transform:translate(0, 10px);
+}
+
+#chart1 .x.axis path, 
+#chart1 .x.axis line {
+  display: none;
+}
+
+#chart1 .y.axis {
+  display: none;
+}
+
+#chart1 .axis-myX{
+  stroke: #8190c5;
+  stroke-width: 2;
+}
+
+#chart1 .axis-myY{
+  stroke: #8190c5;
+  stroke-width: 2;
+}
+
+#chart1 .purchaseLine{
+  stroke: #dcdee5;
+}
+
+#chart1 .purchaseValue, #chart1 .purchaseText{
+  fill: #888c9b;
+  font-family:Montserrat;
+  font-size: 13px;
+}
+
+/*chart 2*/
+
+#chart2{
+  margin: 50px 0 ;
+}
+
+#chart2 .line{
+  fill:none;
+  stroke: #a2d45c;
+  stroke-width: 2px;
+}
+
+#chart2 .x.axis{
+  transform:translate(20,0)
+}
+
+#chart2 .dot{
+  fill:#f6d04c;
+}
+
+#chart2 .dot-text{
+  fill:#888c9b;
+  font-size: 13px;
+  font-family:Montserrat;
+  transform: translate(20px,-33px)
+}
+
+#chart2 .x.axis .tick text{
+  fill: #2c2d33;
+  font-size: 13px;
+  font-family: Montserrat;
+  transform:translate(0, 10px);
+}
+
+#chart2 .x.axis path, 
+#chart2 .x.axis line {
+  display: none;
+}
+
+#chart2 .y.axis {
+  display: none;
+}
+
+#chart2 .axis-myX{
+  stroke: #8190c5;
+  stroke-width: 2;
+}
+
+#chart2 .axis-myY{
+  stroke: #8190c5;
+  stroke-width: 2;
+}
+
+#chart2 .purchaseLine{
+  stroke: #dcdee5;
+}
+
+#chart2 .purchaseValue, #chart2 .purchaseText{
+  fill: #888c9b;
+  font-family:Montserrat;
+  font-size: 13px;
+}
+
+/*pie chart*/
+#pie1{
+  margin: 50px 0 0 0;
+}
+
+#pie1 .label-text-value{
+  fill: #171717;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+#pie1 .label-text-title{
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+#pie1 .chart-title{
+  font-family: Montserrat;
+  font-size: 12px;
+  fill: #64a7dc;
+  text-transform: uppercase;
+}
+
+#pie1 .chart-title-sum{
+  font-family: Montserrat;
+  font-size: 21px;
+  fill: #43485c;
+  text-transform: uppercase;
+  font-weight: bold;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+   <script src="https://d3js.org/d3.v4.min.js"></script> 
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body>
+  <div id="cashflow"></div>
+  <div id="totals"></div>
+  <div id="chart1"></div>
+  <div id="chart2"></div>
+  <div id="pie1"></div>
+  <script src="index.js"></script>
+  <script>
+      dataBar = [{
+            month: "Jan",
+            rent: 200,
+            other: 100,
+            expenses: 550
+        },
+        {
+            month: "Feb",
+            rent: 400,
+            other: 250,
+            expenses: 250
+        },
+        {
+            month: "Mar",
+            rent: 200,
+            other: 0,
+            expenses: 350
+        },
+        {
+            month: "Apr",
+            rent: 200,
+            other: 400,
+            expenses: 150
+        },
+        {
+            month: "May",
+            rent: 200,
+            other: 200,
+            expenses: 150
+        },
+        {
+            month: "Jun",
+            rent: 400,
+            other: 300,
+            expenses: 250
+        },
+        {
+            month: "Jul",
+            rent: 100,
+            other: 320,
+            expenses: 410
+        },
+        {
+            month: "Aug",
+            rent: 220,
+            other: 410,
+            expenses: 540
+        },
+        {
+            month: "Sep",
+            rent: 180,
+            other: 270,
+            expenses: 490
+        },
+        {
+            month: "Oct",
+            rent: 580,
+            other: 670,
+            expenses: 140
+        },
+        {
+            month: "Nov",
+            rent: 280,
+            other: 140,
+            expenses: 230
+        },
+        {
+            month: "Dec",
+            rent: 480,
+            other: 310,
+            expenses: 250
+        }
+    ];
+
+    svgBar(dataBar,"#cashflow",settings);
+
+    var dataTotals = {
+        rent: 50000,
+        other: 30000,
+        expenses: 55000
+    };
+
+    svgTotals(dataTotals,"#totals");
+    var dataHistory1 = [{
+            date: "Jan 17",
+            value: 326000
+        },
+        {
+            date: "Feb 17",
+            value: 328000
+        },
+        {
+            date: "Mar 17",
+            value: 327000
+        },
+        {
+            date: "Apr 17",
+            value: 325000
+        },
+        {
+            date: "May 17",
+            value: 326000
+        },
+        {
+            date: "Jun 17",
+            value: 328000
+        },
+        {
+            date: "Jul 17",
+            value: 329000
+        },
+        {
+            date: "Aug 17",
+            value: 329000
+        },
+        {
+            date: "Sep 17",
+            value: 330000
+        },
+        {
+            date: "Oct 17",
+            value: 331000
+        },
+        {
+            date: "Nov 17",
+            value: 332000
+        },
+        {
+            date: "Dec 17",
+            value: 332000
+        },
+    ]
+    var dataHistory2 = [{
+            date: "Jan 17",
+            value: 254000
+        },
+        {
+            date: "Feb 17",
+            value: 253000
+        },
+        {
+            date: "Mar 17",
+            value: 252000
+        },
+        {
+            date: "Apr 17",
+            value: 251000
+        },
+        {
+            date: "May 17",
+            value: 250000
+        },
+        {
+            date: "Jun 17",
+            value: 249000
+        },
+        {
+            date: "Jul 17",
+            value: 248000
+        },
+        {
+            date: "Aug 17",
+            value: 247000
+        },
+        {
+            date: "Sep 17",
+            value: 246000
+        },
+        {
+            date: "Oct 17",
+            value: 245000
+        },
+        {
+            date: "Nov 17",
+            value: 244000
+        },
+        {
+            date: "Dec 17",
+            value: 243000
+        },
+    ]
+    var dataPur={value:325000,text:"Purchase price"}
+    var settingsLine = {
+        margin:{
+            left: 2,
+            top: 80,
+            right: 40,
+            bottom: 110
+        }
+    }
+
+    lineChart(dataHistory1,dataPur,"#chart1",settingsLine);   
+    lineChart(dataHistory2,dataPur,"#chart2",settingsLine); 
+    //pie
+    var dataPie = [{
+            label: "Insurance",
+            value: 324
+        },
+        {
+            label: "Internet",
+            value: 144
+        },
+        {
+            label: "Rent",
+            value: 424
+        },
+        {
+            label: "Power",
+            value: 124
+        },
+    ]    
+    var settings={colorRange:["#c4cdda", "#cf97e4", "#f2d997", "#a2caea"],radius:170,width:470,height:300,title:"Revnue",titleSum:"$1,200.00"}
+    pieChart(dataPie,"#pie1",settings); 
+  </script>
+</body>
+</html>
