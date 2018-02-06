@@ -130,14 +130,6 @@ box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   stroke-width: 4;
 }
 
-#totals .g-rowTotalFirst{
-  transform: translate(3px,20px)
-}
-
-#totals .g-rowTotalSecond{
-  transform: translate(3px,15px)
-}
-
 #totals .x.axis{
   display: none;
 }
@@ -146,8 +138,6 @@ box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   font-size: 13px;
   font-family: Montserrat;
   fill: #2c2d33;
-  transform: translate(3px,10px);
-
 }
 
 /*chart1*/
@@ -163,7 +153,7 @@ box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
 }
 
 #chart1 .x.axis{
-  transform:translate(20,0)
+  
 }
 
 #chart1 .dot{
@@ -178,15 +168,14 @@ box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
 #chart1 .dot-text{
   fill:#64a7dc;
   font-size: 13px;
-  font-family:Montserrat;
-  transform: translate(20px,-33px)
+  font-family:Montserrat;  
 }
 
 #chart1 .x.axis .tick text{
   fill: #2c2d33;
   font-size: 13px;
   font-family: Montserrat;
-  transform:translate(0, 10px);
+  
 }
 
 #chart1 .x.axis path, 
@@ -230,10 +219,6 @@ box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   stroke-width: 2px;
 }
 
-#chart2 .x.axis{
-  transform:translate(20,0)
-}
-
 #chart2 .dot{
   fill:#f6d04c;
 }
@@ -242,14 +227,12 @@ box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   fill:#888c9b;
   font-size: 13px;
   font-family:Montserrat;
-  transform: translate(20px,-33px)
 }
 
 #chart2 .x.axis .tick text{
   fill: #2c2d33;
   font-size: 13px;
   font-family: Montserrat;
-  transform:translate(0, 10px);
 }
 
 #chart2 .x.axis path, 
@@ -310,4 +293,25 @@ box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.1);
   fill: #43485c;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/* horizontal bar */
+
+#barHorizont .receipt.rect{
+  fill: #bbe8e0;
+}
+
+#barHorizont .received.rect{
+  fill: #3db39e;
+}
+
+#barHorizont .y.axis .tick text{
+  fill: #2c2d33;
+  font-size: 13px;
+  font-family: Montserrat; 
+}
+
+#barHorizont .y.axis path{
+  stroke: #86c3b8;
+  stroke-width: 2px;
 }

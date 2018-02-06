@@ -15,6 +15,7 @@
   <div id="chart1"></div>
   <div id="chart2"></div>
   <div id="pie1"></div>
+  <div id="barHorizont"></div>
   <script src="index.js"></script>
   <script>
       dataBar = [{
@@ -230,6 +231,35 @@
     ]    
     var settings={colorRange:["#c4cdda", "#cf97e4", "#f2d997", "#a2caea"],radius:170,width:470,height:300,title:"Revnue",titleSum:"$1,200.00"}
     pieChart(dataPie,"#pie1",settings); 
+
+    var dataHorBar = [{
+            month: "May",
+            receipt: 200,
+            received: 100
+           
+        },
+        {
+            month: "Jun",
+            receipt: 250,
+            received: 0
+        },
+        {
+            month: "Jul",
+            receipt: 200,
+            received: 0
+        },
+        {
+            month: "Aug",
+            receipt: 100,
+            received: 0
+        }];
+        settingsHor={
+            height:190,
+            width:300,
+            heightReceipt:13,
+            heightRecieved:7
+        }
+        horBarChart(dataHorBar,"#barHorizont",settingsHor)
   </script>
 </body>
 </html>
